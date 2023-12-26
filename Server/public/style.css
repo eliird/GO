@@ -1,0 +1,103 @@
+.Heading{
+    color: brown;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: capitalize;
+    border: 100px orange;
+}
+/* style by class */
+.test_list{
+    color: blue;
+    border: 3px black;
+    list-style: georgian;
+    float: left;
+}
+
+.test{
+    color: chocolate;
+    border: 30px black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/* Style by tag */
+div{
+    border: 3px black;
+}
+
+.test:hover{
+    font-size: 20px;
+}
+
+.test_list{
+    display: flex;
+    flex-direction: column;
+}
+
+.test{
+    display: flex;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.signUp{
+    text-align: center;
+}
+/* 
+To style by id, we put use # declasration compared to . of the class
+try to use classes because ids are more specific, we avoid specifics in css.
+The !important tag is even more specific than ids.
+you use important when specifying th property
+e.g:
+    color: green !important;
+    
+You can put an element in multiple classes by using a " " when declaring it.
+Specificity wins when styling such an element, and accessed by multiple .
+eg 
+    class = "a b", 
+    style access:
+        .a.b{} -> most specific
+        .a{}
+        .b{}
+        */
+
+
+/* 
+Pseudo Classes
+    -> Hover a pseudo class accesed by adding :hover to the item see the list example
+        -> Changing the option when hovering over it
+        -> Hover does not work on mobile so keep in mind
+        -> Try not to use hover for core functionality
+    ->first-child pseudo class
+        ->change the properties of the first item in a section for example first item of the div or list
+    ->last-child is same as first-child but for last
+    ->focus: cursor
+    ->active
+    ->visited
+
+
+*/
+
+/* 
+Pseudo Elements
+    accessed using ::
+    ->
+    ->
+
+*/
+
+
+/* 
+FLEX
+
+*/
+
+/* 
+Can also add animations using animation property
+animation can be defined by 
+@keyframes customAnim{
+    transform: rotate(360deg)
+}
+
+*/
