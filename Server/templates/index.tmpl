@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width = device-width, initial-scale=1.0"/> <!-- To tell the browser I will handle mobile page myself-->
+        <title> Personality Tests</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
+    </head>
+
+    <body>
+        <div>
+        {{range .}} <!--Send the items from list 1 by 1 to the html!-->
+	 <h1>{{.Title}}</h1>
+         <p>{{.Description}}</p>
+         {{end}}
+	</div>
+
+	<div class="Heading">
+            <h1>Take the personality test</h1>
+        </div>
+        <div>
+            <ul class="test_list">
+                <li class="test"><a href="./test1.html"> Big 5</a></li>
+                    <p>The most common and the most accurate test Measures what your personality is in terms of neuroticsm, agreeableness, blah, blah</p>
+                <li class="test"><a href="./test2.html"> The second test</a></li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea consectetur expedita sequi rem numquam voluptates, ex cumque eaque officiis quis nisi? Aliquam ad minima eum veniam aspernatur aut voluptatem exercitationem!</p>
+                <li class="test"><a href="./test3.html"> The third test</a></li>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit et odit doloribus fuga nesciunt esse facere tempora facilis, obcaecati accusamus quisquam maiores modi. Animi commodi voluptatibus voluptate sed at temporibus?</p>
+            </ul>
+        </div>
+
+        <div class="signUp">
+            <h1> Sign Up with us to get your scores sent to you!</h1>
+            <input type="text" name="Email Addrees" id="email"> 
+            <button> Sign Up</button> 
+        </div>
+    </body>
+</html>  
