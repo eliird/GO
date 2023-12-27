@@ -12,10 +12,10 @@ func Post(w http.ResponseWriter, r *http.Request){
 		var requestItem data.Exhibition
 		err := json.NewDecoder(r.Body).Decode(&requestItem)
 		if err!= nil{
-			http.Error(w, err.Error, http.StatusBadRequest)
+			//http.Error(w, err, http.StatusBadRequest)
 			return
 		}
-		data.Add(exhibiton)
+		data.Add(requestItem)
 		w.Write([]byte("OK"))
 
 	}else{
